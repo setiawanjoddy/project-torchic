@@ -1,0 +1,28 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../config';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header title={SITE_TITLE} />
+		<main>
+			<h1>👨🏻‍💻 Hello there, I'm Joddy!</h1>
+			<p>
+				A guy who lives & works as a Product Manager in Indonesia. 
+       			I have an experience in this field since 2020, starting when I had an internship at Apple Developer Academy @BINUS. 
+        		I love to build things, do research and collaborate with people.
+			</p>
+			<p>
+				Thank you for visiting my personal blog. Hope you like it!
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
